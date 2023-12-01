@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "yarn generate && yarn nrd && node ./deploy/ghpages.js",
+    "nrd": "nuxt-rd"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -19,6 +21,9 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@vueuse/nuxt": "^10.6.1"
+    "gh-pages": "^5.0.0",
+    "path": "^0.12.7",
+    "@vueuse/nuxt": "^10.6.1",
+    "nuxt-relative-dir": "^0.0.5"
   }
 }
