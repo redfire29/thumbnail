@@ -7,7 +7,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "yarn generate && node ./deploy/ghpages.js",
+    "deploy": "rm dist && yarn generate && node ./deploy/ghpages.js",
     "nrd": "nuxt-rd"
   },
   "devDependencies": {
