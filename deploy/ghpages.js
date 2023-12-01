@@ -17,4 +17,4 @@ const callback = err => {
 /**
  * This task pushes to the `master` branch of the configured `repo`.
  */
-ghpages.publish(path.resolve(__dirname, '../hybrid'), options, callback);
+ghpages.publish(path.resolve(__dirname, '../dist'), options, callback);

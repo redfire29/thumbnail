@@ -5,6 +5,10 @@ export default defineNuxtConfig({
     'nuxt-lodash',
     '@nuxtjs/tailwindcss',
   ],
+  app: {
+    baseURL: '/thumbnail/',
+    buildAssetsDir: 'nuxt',
+  },
   devtools: { enabled: true },
   tailwindcss: {
     cssPath: '~/assets/css/main.css',

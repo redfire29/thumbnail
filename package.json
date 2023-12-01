@@ -1,19 +1,19 @@
 {
   "name": "nuxt-app",
   "private": true,
-  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "yarn generate && yarn nrd && node ./deploy/ghpages.cjs",
+    "deploy": "yarn generate && node ./deploy/ghpages.js",
     "nrd": "nuxt-rd"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.10.1",
+    "@types/node": "^18.17.0",
     "nuxt": "^3.8.2",
     "nuxt-lodash": "^2.5.3",
     "vite-plugin-pug": "^0.3.2",

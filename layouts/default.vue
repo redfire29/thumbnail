@@ -1,9 +1,6 @@
 <template lang="pug">
 div
-  AppHeader
-  div
-    slot
-  AppFooter
+  slot
 </template>
 
 <script setup>
